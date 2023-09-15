@@ -7,7 +7,16 @@
  * If the input string is an empty string, it returns an empty string
  */
 
-function capitaliseFirstAndLast() {
+function capitaliseFirstAndLast(string) {
+
+    if(string ===""){
+        return "";
+    }
+    const start = string[0].toUpperCase();
+    const middle = string.slice(1, string.length -1);
+    const end = string[string.length -1].toUpperCase();
+
+    return `${start}${middle}${end}`
 }
 
 console.log(capitaliseFirstAndLast("table")); // TablE

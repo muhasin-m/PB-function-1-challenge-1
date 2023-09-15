@@ -23,3 +23,22 @@ containsVowel("AEIOU"); // true
 containsVowel(""); // false
 containsVowel("Abc"); // true
 */
+
+function containsVowel(string) {
+    const vowels = "aeiou";
+    for (let i = 0; i < string.length; i++) {
+      if (vowels.includes(string[i].toLowerCase())) {
+        return true;
+      }
+    }
+    return false;
+  }
+  
+
+console.log(containsVowel("table")); // true
+console.log(containsVowel("bcdfg")); // false
+console.log(containsVowel("a")); // true
+console.log(containsVowel("aeiou")); // true
+console.log(containsVowel("AEIOU")); // true
+console.log(containsVowel("")); // false
+console.log(containsVowel("Abc")); // true

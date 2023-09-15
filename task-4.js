@@ -15,7 +15,14 @@
  * 
  */
 
-function fillArray() {
+function fillArray(length, character) {
+    const array = [];
+
+    for (let i = 0; i <length; i++){
+        array.push(character)
+    }
+
+    return array;
 }
 
 console.log(fillArray(3, "*")); // [ '*', '*', '*' ]

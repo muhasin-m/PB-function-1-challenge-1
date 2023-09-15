@@ -7,7 +7,10 @@
  * If the numbers are equal, it returns the first one. 
  */
 
-function largestOf2() {
+function largestOf2(n1, n2) {
+    if(n1 >= n2) {
+        return n1;
+    }else {return n2}
 }
 
 console.log(largestOf2(2, 5)); // 5
